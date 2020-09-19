@@ -20,6 +20,6 @@ for(let i=0; i < links.length; i++) {
     let link = document.createElement("a");
     link.setAttribute("href",links[i].url);
     link.innerText=links[i].label;
-    li.appendChild(link);
+    listItem.appendChild(link);
     moduleWeek.appendChild(listItem);
 }
