@@ -28,14 +28,19 @@ h2 {
     padding: 2.5rem;
     font-size: 1.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 2rem;
 }
 
 a{
-      color: #ffffff; 
-    
-        &:hover {
-            color: #000000;
+    color: #ffffff; 
 }
+
+a:hover {
+    color: #000000;
+}
+a:visited {
+    color: #4f5d75;
+
 }
 
 
