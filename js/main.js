@@ -23,3 +23,22 @@ for(let i=0; i < links.length; i++) {
     listItem.appendChild(linkRef);
     moduleWeek.appendChild(listItem);
 }
+
+//week one exercises
+
+function loadStory(){
+    let storyName = document.getElementById("nameInput").value;
+    let storyHTML = localStorage.getItem(storyName);
+    document.getElementById("storyEditor").value = storyHTML;
+}
+
+function saveStory(){
+    let storyName = document.getElementById("nameInput").value;
+    let storyHTML = document.getElementById("storyEditor").value;
+    localStorage.setItem(storyName, storyHTML);
+}
+
+function displayStory(){
+    let storyHTML = document.getElementById("storyEditor").value;
+    document.getElementById("storyDisplay").innerHTML = storyHTML;
+}

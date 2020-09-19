@@ -15,10 +15,19 @@
     
     <h1>Kim DeMille's Portfolio</h1>
     
-    <h2>Week One Notes</h2>
-<section class="notes">
-    
-</section>
-  </body>
+    <h2>Week One Exercises</h2>
+<section id="exerciseEg">
+  <h3>Story Editor</h3>
+  Story Name:<input id=nameInput></input>
   
+</section>
+  <section id="storyButtons">
+    <button onclick="loadStory()">Find and Edit It</button>
+    <button onclick="saveStory()">Save It</button>
+    <button onclick="displayStory()">Display It</button>
+  </section>
+  <textarea id="storyEditor" placeholder="Write a totally awesome story here."></textarea>"
+  <section id="storyDisplay"></section>
+  </body>
+    <script src="..js/main.js"></script>
 </html>
