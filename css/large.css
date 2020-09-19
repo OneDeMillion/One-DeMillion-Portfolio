@@ -26,6 +26,11 @@ h3 {
     color: #f5cb5c;
     font-size: 1.8rem;
 }
+
+p {
+    color: #000000;
+    font-size:1.2rem;
+}
 .moduleList {
     margin: 2rem 4rem;
     background-color: #bfc0c0;
@@ -58,5 +63,17 @@ textarea {
     padding: 1rem;
 }
 
+#nameInput {
+    background-color: rgb(238, 226, 192);
+}
 
+#storyButtons {
+    padding: .5rem;
+}
+
+#storyDisplay p{
+    font-size: 2rem;
+    color: #000000;
+    
+}
 
