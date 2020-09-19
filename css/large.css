@@ -21,4 +21,25 @@ h2 {
     text-align: center;
 }
 
+.moduleList {
+    margin: 2rem 4rem;
+    background-color: #bfc0c0;
+    color: #000000;
+    padding: 2.5rem;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+      color: #ffffff; 
+    
+        &:hover {
+            color: #000000;
+}
+}
+
+
+
+
+
 

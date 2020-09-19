@@ -17,9 +17,9 @@ const myWeek = document.getElementById("moduleWeek");
 
 for(let i=0; i < links.length; i++) {
     let listItem = document.createElement("li");
-    let link = document.createElement("a");
-    link.setAttribute("href",links[i].url);
-    link.innerText=links[i].label;
-    listItem.appendChild(link);
+    let linkRef = document.createElement("a");
+    linkRef.setAttribute("href",links[i].url);
+    linkRef.innerText=links[i].label;
+    listItem.appendChild(linkRef);
     moduleWeek.appendChild(listItem);
 }
