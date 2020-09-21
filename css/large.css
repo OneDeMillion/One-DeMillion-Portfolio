@@ -78,4 +78,8 @@ textarea {
 }
 
 /*--Week1 Notes--*/
-
+#notes {
+    width: 105rem;
+    height: 30rem;
+   
+}
