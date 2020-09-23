@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="userInput" type="text"></input>
+    <button onclick="readInput()">Enter Input</button>
+    <div id="inputDisplay"></div>
+    
+</body>
+    <script>
+        function readInput() {
+            const entryInput = document.getElementById('userInput');
+            document.elementById("inputDisplay").innerHTML = entryInput;
+        }
+    </script>
+</html>
