@@ -83,3 +83,15 @@ textarea {
     height: 30rem;
    
 }
+
+/*--Week2 Assignment--*/
+
+#mathAssignment1 {
+    background-color: #bfc0c0;
+    padding: 3rem 20em;
+    margin: 10rem;
+}
+
+#mathAssignment1 h2 {
+    color: #4f5d75;
+}

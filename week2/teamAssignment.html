@@ -1,21 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Team Activity 1</title>
+    <meta name="description" content="Notes for Week 1 of OneDeMillion's Portfolio for WDD 330" />
 
-    <input id="userInput" type="text"></input>
-    <button onclick="readInput()">Enter Input</button>
-    <div id="inputDisplay"></div>
-    
+    <link rel="stylesheet" href="../css/large.css">
+</head>
+<h1>Team 4 Activity 1</h1>
+
+<body>
+    <section id="mathAssignment1">
+        <h2>Input Text or Numbers</h2>
+        <p>Add any text to display and numbers to find the sum!</p>
+        <p>Box 1: Insert text or number to find the sum up to the integer.</p>
+        <input type="text" id="userInput"></input>
+        <button type="button" onclick="readText()">Read or Add</button>
+        <div id="inputText"></div>
+        <p>Box 2: Insert number with Box 1 number to find all the sum.</p>
+        <input type="text" id="userInput2"></input>
+        <button type="button" onclick="plus()">Add Me</button>
+        <div id="inputText2"></div>
+    </section>
 </body>
-    <script>
-        function readInput() {
-            const entryInput = document.getElementById('userInput');
-            document.elementById("inputDisplay").innerHTML = entryInput;
+<script>
+    function readText() {
+        //grabs input data and displays
+
+        let userText = document.querySelector("input[type='text']").value;
+
+        if (Number.isNaN(parseInt(userText))) {
+
+            document.getElementById('inputText').innerHTML = userText;
+        } else {
+            let numTotal = sumNums(parseInt(userText));
+            document.getElementById('inputText').innerHTML = numTotal;
         }
-    </script>
+
+    }
+
+    function sumNums(num) {
+        let total = 0;
+        for (let i = 1; i <= num; i++) {
+            total += i;
+        }
+        return total;
+    }
+
+    function plus() {
+        let num1 = parseInt(document.getElementById("userInput").value);
+        let num2 = parseInt(document.getElementById("userInput2").value);
+        console.log(typeof num1);
+        let total = num1 + num2;
+        //total=sumNums(total); we added the other function for the fun of it.
+        document.getElementById('inputText2').innerHTML = total;
+    }
+</script>
+
 </html>
