@@ -1,50 +1,228 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Notes for Week 1 of WDD330</title>
-    <meta
-      name="description"
-      content="Notes for Week 1 of OneDeMillion's Portfolio for WDD 330"
-    />
-    
+    <meta name="description" content="Notes for Week 1 of OneDeMillion's Portfolio for WDD 330" />
+
     <link rel="stylesheet" href="../css/large.css">
 
-  </head>
-  <body>
-    
+</head>
+
+<body>
+
     <h1>Kim DeMille's Portfolio</h1>
-    
+
     <h2>Week One Notes</h2>
-<section id="exerciseEg">
-  <h3>JavaScript Novice to Ninja: Chapters 2-4</h3>
-</section>
-
-    <section id="noteArea">
-      <p id="notes">
-     chapter 2</p>
-     <ul>
-         <li>// short comment</li>
-         <li>/* long coment */</li>
-         <li>good practice to write comments. Can use tools like JSToolkit to produce documentation</li>
-     </ul>   
-     
-     <ul>
-         <li>syntax known as c style</li>
-         <li>made of statements & semi-colons</li>
-         <li>; not needed, as can use ASI interpreters but are error prone</li>
-         <li>best practice to use ;</li>
-         <li>block in {} brackets</li>
-
-    
-     </ul>
-
-
-      
+    <section id="exerciseEg">
+        <h3>JavaScript Novice to Ninja: Chapters 2-4</h3>
     </section>
 
-  </body>
+    <section id="writtenNotesBox">
+        <p>Comments</p>
+        <ul>
+            <li>// short comment</li>
+            <li>/* long coment */</li>
+            <li>good practice to write comments. Can use tools like JSToolkit to produce documentation</li>
+        </ul>
 
-    
+        <p>Grammar</p>
+        <li>syntax known as c style</li>
+        <li>made of statements & semi-colons</li>
+        <li>; not needed, as can use ASI interpreters but are error prone</li>
+        <li>best practice to use ;</li>
+        <li>block in {} brackets</li>
+        </ul>
+
+        <p>Primitive data types</p>
+        <ul>
+            <li>js has 7 data types</li>
+            <li>the following 6 are primitive</li>
+            <li>string, symbol (es6), number, boolean, undefined, null</li>
+            <li>OBJECT - any value not one of above primitive types include:</li>
+            <li> arrays, functions, object literals</li>
+        </ul>
+
+            <p>typeof - special operator - find out data type of value</p>
+            <p>e.g. typeof 'hello' returns 'string'</p>
+
+            <p>Declaring & Assigning</p>
+            <ul>
+                <li>Declare variables before Assigning</li>
+                <li>After ES6, JS uses const & let to declare</li>
+                <li>const = variable will not be reassigned to another value</li>
+                <li>let = variable can be reassigned in program</li>
+                <li>to see value of varible, enter name of variable</li>
+                <li>can declare and assign multiple variables at same time</li>
+                <li>If variable references non-primitive datatype such as array, function or object then CONST will not
+                    make it immutable</li>
+                <li>Using cONST prevents you from reassigning a variable to another object</li>
+                <li>Try to use CONST - makes proj more predictable. Helps avoid bugs</li>
+            </ul>
+
+            <p>Scope</p>
+            <ul>
+                <li>CONST & LET = block scoped, value exists inside block declared in</li>
+                <li>Scope = Where a constant or variable is accessible by the program</li>
+                <li>2 common scopes - Global and Local</li>
+            </ul>
+
+            <p>Global Scope</p>
+            <ul>
+                <li>Any variable declared out of block</li>
+                <li>Accessible anywhere in program</li>
+                <li>Not considered good practice, as variables with same name clash & overwrite each other</li>
+            </ul>
+
+            <p>Local Scope</p>
+            <ul>
+                <li>Blocks can be used to create local Scope</li>
+                <li>Any variables defined inside a block using LET or CONST will only be avail inside that block</li>
+                <li>If LET & CONST are not used, the variable will be available out side the block</li>
+                <li>e.g. let b=2; {b=4; b;} returns 4 (check outside block) b; returns 4;</li>
+                <li>Good pracetice to use LET & CONST to declare variables to ensure they are block scoped.</li>
+            </ul>
+
+            <p>Naming Constants & Variables</p>
+            <ul>
+                <li>Give constants & variables sensible names that describe what the variables represents</li>
+                <li>Can start with: upper case, lower case, underscore _, dollar sign $.</li>
+                <li>Can not start with numbers, but CAN contain them.</li>
+            </ul>
+
+            <p>Variable Naming</p>
+            <ul>
+                <li>Variables that Start with _ (underscore) refer to private properties and methods</li>
+                <li>$ sign is used by the query library. It is proper practice not to use as can cause problems</li>
+                <li>They are case sensitive.</li>
+                <li>When using multiple words try to use Camel Case. this is the best practice.</li>
+            </ul>
+
+            <p>Direct Assignment and Assignment by Reference</p>
+            <ul>
+                <li>When assign primitive value to variable, any changes you make are made directly to that value.</li>
+                <li>If you assign non-primitive value to variable, this is done by reference So changes made after will
+                    affect all references to that object.</li>
+            </ul>
+
+            <p>Strings</p>
+            <ul>
+                <li>Can create string literal by writing group of characters in quote marks</li>
+            </ul>
+
+            <p>Using a constructor function</p>
+            <ul>
+                <li>Can also create string object using construction function</li>
+                <li>new String("hello")</li>
+                <li>Will create new string literal 'hello' but will br classed as object not primitive data type</li>
+                <li>preference to use string literal notation</li>
+            </ul>
+
+            <p>Blackslashes</p>
+            <ul>
+                <li>Used to escape special characters in strings</li>
+                <li>Single quotes \'</li>
+                <li>double quote \"</li>
+                <li>End of line \n</li>
+                <li>Carriage Return \r</li>
+                <li>Tab \t</li>
+                <li>Backslash \\</li>
+            </ul>
+
+            <p>String Properties and Methods</p>
+            <ul>
+                <li>Primitive data types have objects and methods</li>
+                <li>Properites - info about object or value</li>
+                <li>Methods - perform an active on the object or value</li>
+                <li>Dot notation - Access properties of a string using this</li>
+            </ul>
+
+            <p>Alt Notation</p>
+            <ul>
+                <li>Square brackets to access primitive datatypes properties</li>
+                <li>name['lenth'];</li>
+                <li>Dot Notation more prevalent</li>
+            </ul>
+
+            <p>Method</p>
+            <ul>
+                <li>Method is action primitive data type can perform</li>
+                <li>call method - use dot operator followed by name of method followed by parenthese</li>
+                <li>name.toUpperCase(); returns 'ALEXA'</li>
+                <li>.toLowerCase() 'alexa'</li>
+                <li>.charAt(); '1' which character at which position</li>
+                <li>.indexof(A); '0' Where a character or substring appears in string (-1 if not in string)</li>
+                <li>.lastIndexOf('a) '4' Occurence of character or substring</li>
+                <li>.includes('a') true if string contains a certain character</li>
+                <li>.startsWith('A'); true</li>
+                <li>.endsWith('A'; false</li>
+                <li>.concat('Ninja') concats 2 or more strings</li>
+                <li>shortcut for string concatenation is to use + operator</li>
+                <li>.trim(); removes white space from beginning and end</li>
+                <li>.repeat(2); repeats a string stated a number of times</li>
+            </ul>
+
+            <p>Template literals</p>
+            <ul>
+                <li>Use backtick character `Hello!`</li>
+                <li>Can use both type of quotes</li>
+            </ul>
+
+            <p>Symbols</p>
+            <ul>
+                <li>New primitive in ES6</li>
+                <li>Can be used to create unique values</li>
+                <li>Helps to avoid naming collisions</li>
+                <li>Only primitive that doesn't have a literal form</li>
+                <li>Good practice to add description of symbol inside parentheses</li>
+                <li>const unique//) = symbol ('this is a unique ID)</li>
+                <li>It's possible for two variables to point to the same symbol if the for() method used when symbol is
+                    created</li>
+            </ul>
+
+            <p>Numbers</p>
+            <ul>
+                <li>Can be integers, </li>floating point numbers
+                <li>isInteger() method can help distinguish between types of numbers by identifying if the number is an
+                    integer</li>
+                <li>Numbers also have constructor function</li>
+                <li>new Number(3) returns [Number 3]</li>
+                <li>Preference is for number literals though</li>
+            </ul>
+
+            <p>Octal/Hexadecimal Numbers</p>
+            <ul>
+                <li>If the numbers starts with 0x it is considered to be in hexidec (base16) notation</li>
+                <li>e.g. 0xAF //A represents 10, F represents 15 so returns 175</li>
+                <li>If starts with 0o considered to be Octal (base 8) notation</li>
+                <li>e.g. 0o47 // 4 eights and 7 units returns 39</li>
+                <li>ES6 supports binary literals</li>
+                <li>If number starts with zero followed by letter b consider to be binary (base 2) notation</li>
+                <li>0b010 //1 eight, 0 fours, 1 two and 0 units returns 10</li>
+            </ul>
+
+            <p>Exponential Notation</p>
+            <ul>
+                <li>Numbers also represented in exponential notation = shorthand for "Multiply by 10 to power of"</li>
+                <li>also called "scientific notation</li>
+                <li>e.g. 1e6; // 1 multiplied by 10 to the power 6 returns 1,000,000</li>
+                <li>e.g. 2E3; // 2 multipled by 10^3</li>
+                <li>Decimal values created by using negative index values:</li>
+                <li>2.5e-3; //25 multiplied by 10 to power of -3 (.001) returns 0.0025</li>
+            </ul>
+
+            <p>Number Methods</p>
+            <ul>
+                <li>Also have built in methods</li>
+                <li>Be careful with dot notation and not to confuse it with the decimal point</li>
+                <li>eg. 5..toExponential();</li>
+                <li>Can also put a space between e.g 5 .toExponential();</li>
+                <li>Or write as a decimal e.g. 5.0.toExponential();</li>
+            </ul>
+
+    </section>
+</body>
+
 </html>
