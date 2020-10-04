@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Notes for Week 2 of WDD330</title>
+    <meta name="description" content="Notes for Week 2 of OneDeMillion's Portfolio for WDD 330" />
+
+    <link rel="stylesheet" href="../css/large.css">
+
+</head>
+
+<body>
+
+    <h1>Kim DeMille's Portfolio</h1>
+
+    <h2>Week Two Notes</h2>
+    <section id="exerciseEg">
+        <h3>JavaScript Novice to Ninja: Chapters 2-4</h3>
+    </section>
+
+    <section id="writtenNotesBox">
+        <p>Map/Filter/Reduce</p>
+        <ul>
+            <li>Map() method creates a new array from an existing one, it applies a function to each one of the elements in the original array</li>
+                <li>const intNum = [1,2,3,4);<br>
+                    const doubleNum = intNum.map(item => item * 2);<br>
+                    console.log(doubleNum); // [2,4,6,8]</li>
+            <li>Filter() method takes each element of the original array and applies a conditional statement. If true, the element is pushed to the new array.</li>
+                <li>const intNum = [1,2,3,4);<br>
+                    const evenNum = intNum.filter(item => item % 2 === 0);<br>
+                    console.log(evenNum); // [2,4]</li>
+            <li>Reduce() method reduced the array to just one single value. To get that value it runs a function on each element of the original function.</li>
+                <li>const trees = [oak, fir, maple, maple, aspen, oak, fir, oak, maple, fir);<br>
+                    const treeCount = trees.reduce(function(obj, tree) {<br>
+                        if (!obj[tree]) {<br>
+                            obj[tree] = 1;<br>
+                        } else {<br>
+                            obj[tree]++;<br>
+                        }<br>
+                        return obj;<br>
+                    }, {});<br>
+                <br>
+                    console.log(treeCount);<br>
+                    <br>
+                    Output:<br>
+                        {<br>
+                            oak: 3; fir: 3; maple: 3; aspen: 1;<br>
+                        }</li>
+       </ul>
+       <!--<img src="" alt="Twitter shot of Map/reduce/filter visual" width="400" height="auto">-->
+
+    
+
+    </section>
+</body>
+
+</html>
