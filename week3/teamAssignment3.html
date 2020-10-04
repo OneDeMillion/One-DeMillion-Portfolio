@@ -84,12 +84,17 @@
             
       // Array.prototype.sort()
       // 3. Sort the inventors by birthdate, oldest to youngest
-      const dobSort = inventors.sort((firstDude, secondDude) => {return firstDude.year-secondDude.year;}); //sort by date ascending)
+      const dobSort = inventors.sort((firstDude, secondDude) => {
+      
+      return firstDude.year-secondDude.year;}); //sort by date ascending)
       console.table(dobSort);
       
       // Array.prototype.reduce()
       // 4. How many years did all the inventors live?
-      const longLives = inventors.reduce((a,b) => {i.passed + i.year}, 0);
+      const totalYears = inventors.reduce((lifespan, person) => {
+        //add totals to be passed back to function; died - birth = life
+        return lifespan += (person.passed + person.year);
+        }, 0);
       console.log(longLives)
 
 
@@ -112,11 +117,14 @@
       // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
       // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
       // goto the link above and open the console. Paste the following two lines in.  That will create a list of links in memory that you can reference through the console. Use that list to finish the problem.
+      /*
       const category = document.querySelector('.mw-category');
       const links = Array.from(category.querySelectorAll('a'));
         
       const de = links.filter(link => {if (link.textContent.match(/de/)){return link;}});
-        
+       */ 
+
+       // Multiple tries
               //const de = () => {links.map(links => {if (links.textContent.includes("de")){return "YES";} });}
 
               //const de = links.map(links => {if (links.textContent.includes("de")){return "YES";} });
