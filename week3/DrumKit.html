@@ -47,7 +47,8 @@
     </div>
   </div>
 
-  <audio data-key="65" src="sounds/clap.wav"></audio>
+  <audio data-key="65" src="
+  sounds/clap.wav"></audio>
   <audio data-key="83" src="sounds/hihat.wav"></audio>
   <audio data-key="68" src="sounds/kick.wav"></audio>
   <audio data-key="70" src="sounds/openhat.wav"></audio>
@@ -73,9 +74,9 @@
         this.classList.remove('playing');
     }
 
-    const keys = querySelectorAll('.key');
-    keys.forEach(key => addEventListener('transitionend',removeTransition));
-    window.addEventListener('keydown');
+    const keys = Array.from(document.querySelectorAll('.key'));
+    keys.forEach(key => key.addEventListener('transitionend',removeTransition));
+    window.addEventListener('keydown',playsound);
 
 
 </script>
