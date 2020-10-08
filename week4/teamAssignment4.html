@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="../css/teamAssignment4.css">
+
+</head>
+
+<body>
+  <h1>Let's Play Tic Tac Toe</h1>
+  <h2>Team Activity - Week 4</h2>
+  <table class="board">
+    <tbody>
+      <tr class="col1">
+        <td class="row1"></td>
+        <td class="row2"></td>
+        <td class="row3"></td>
+      </tr>
+      <tr class="col2">
+        <td class="row1"></td>
+        <td class="row2"></td>
+        <td class="row3"></td>
+      </tr>
+      <tr class="col3">
+        <td class="row1"></td>
+        <td class="row2"></td>
+        <td class="row3"></td>
+      </tr>
+    </tbody>
+    <button id="reset">Reset</button>
+  </table>
+</body>
+<script>
+  const kisses = 'X';
+  const hugs = 'O';
+  let middleMan = kisses;
+  const full = document.querySelectorAll('td').innerHTML;
+  const reset = document.documentGetElementById('reset');
+
+  document.querySelector('.board').addEventListener('click', turn);
+
+  function turn(e) {
+    
+    //console.log('It clicked');
+    //document.querySelector(e).innerHTML = "X";
+    e.target.innerHTML = middleMan;
+    //Curious if a ternary operator version exists
+    //middleMan === kisses ? middleMan = kisses : middleMan = hugs;
+    //if (full === hugs || full === kisses) {
+      //console.log("it's full");
+
+      if (middleMan === kisses) {
+        middleMan = hugs;
+      } else {
+        middleMan = kisses;
+      }
+    
+  } {
+    //click places in a x or o dependent on player
+
+    //if/else block checking for each player - ternary operator
+    //with each click switch players -toggle class?
+  }
+</script>
+
+</html>
