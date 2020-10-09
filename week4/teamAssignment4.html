@@ -35,9 +35,9 @@
 <script>
   const kisses = 'X';
   const hugs = 'O';
-  let middleMan = kisses;
+  //let middleMan = kisses;
   const full = document.querySelectorAll('td').innerHTML;
-  const reset = document.documentGetElementById('reset');
+  //const reset = document.documentGetElementById('reset');
 
   document.querySelector('.board').addEventListener('click', turn);
 
@@ -45,7 +45,7 @@
     
     //console.log('It clicked');
     document.querySelector(e).innerHTML = "X";
-    e.target.innerHTML = middleMan;
+    //e.target.innerHTML = middleMan;
     //Curious if a ternary operator version exists
     //middleMan === kisses ? middleMan = kisses : middleMan = hugs;
     //if (full === hugs || full === kisses) {

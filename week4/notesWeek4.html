@@ -23,6 +23,13 @@
     <section id="writtenNotesBox">
         
         <ul>
+            <li>Event Bubbling - The event starts at the most specific node and flows outward to the least specific one. This is the default.<br>
+            Imagine a list item contains a link. When you lover over the link or click on it. JS can trigger events on the anchor tag element, <br>
+            and also any elements the anchor element sits inside.</a></li>
+            <li>Event Capturing - The event starts at the least specific node and flows inwards to the most specific one.</li>
+            <li>capture: true//capturing phase</li>
+            <li>capture: false//bubbling phase. this is the default</li>
+            <li>once: true// listens for click and then unbinds</li>
             
        </ul>
        

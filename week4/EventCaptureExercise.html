@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Understanding JavaScript's Capture, Bubbling and Propagation</title>
+</head>
+<body class="bod">
+
+  <div class="one">
+    <div class="two">
+      <div class="three">
+      </div>
+    </div>
+  </div>
+
+<style>
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after { 
+    box-sizing: inherit; 
+  }
+
+  div {
+    width: 100%;
+    padding: 100px;
+  }
+
+  .one {
+    background: thistle;
+  }
+
+  .two {
+    background: mistyrose;
+  }
+
+  .three {
+    background: coral;
+  }
+</style>
+
+<button></button>
+<script>
+    const divs = document.querySelectorAll('div');
+    const button = document.querySelector('button');
+
+    function logText(e) {
+        console.log(this.classList.value);
+        //e.stopPropagation(); //says stop bubbling up - I only want what I click
+                            // can wrap this in an if statement if want selective bubbling
+        //console.log(this);
+    }
+
+
+    divs.forEach(div => div.addEventListener('click', logText, {
+        capture: false, // default is false
+        once: true  //listens for click and then unbinds (click does not work)
+    }));
+
+    button.addEventListener('click', () => {   
+        console.log('click!!!!!');
+    }, {
+        once: true  //click one time and then unbinds
+    });
+</script>
+</body>
+</html>
