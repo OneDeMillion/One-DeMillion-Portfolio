@@ -101,8 +101,54 @@
             <li>Inside the child class declaration, the keyword super refers to the parent class, and can be used to access any properties and call <br>
                 any methods of the parent class</li>
        </ul>
+
+       <p>Polymorphism</p>
+       <ul>
+           <li>Polymorphism means that different objects can have the same method, but implement it in different ways</li>
+           <li>The toString() method is a good demonstration of polymorphism, since different objects have the same method but implement it differently</li>
+       </ul>
+
+       <p>Property Attributes and Descriptors</p>
+       <ul>
+           <li>All object properties have the following attributes stored in a property descriptor: value, writeable, enumerable, configurable.<br>
+            Value's default is undefined. The other three descriptor's default is false.</li>
+            <li>Use Object.getOwnPropertyDescriptor() method to see the values</li>
+            <li>Instead of using assignment, we can add properties to an object using the Object.defineProperty() method</li>
+            <li>An object property descriptor can have get() and set() methods instead of a value attribute<br>
+                All objects must have one or the other, they can not have both</li>
+       </ul>
+
+       <p>Creating Objects from Other Objects</p>
+       <ul>
+           <li>The Object() constructor function has a method called create that can be used to create a new object that is an exact copy of the object <br>
+            that is provided as an argument.</li>
+            <li>Extra properties can then be added to each instance using assignment</li>
+            <li>Every time a new object is created using the Object.create() method, the new object inherits all the properties and methods from the parent <br>
+                object, which becomes the new object’s prototype</li>
+       </ul>
+
+       <p>Binding this</p>
+       <ul>
+            <li>When a function is nested inside another function, which can often happen when using methods in objects, especially ones that accept callback <br>
+            functions. The value of this loses its scope and points to the global object inside a nested function</li>
+            <li>A common solution is to set the variable that to equal this beforethe nested function, and refer to that in the nested function instead of this</li>
+            <li>The bind() method is a method for all functions and is used to set the value of this in the function. If this is provided as an argument to bind() <br>
+                while it’s still in scope, any reference to this inside the nested function will be bound to the object calling the original method:</li>
+            <li>ES6 introduced the for-of syntax for arrays and this does not require a nested function to be used</li>
+            <li>Arrow functions were introduced in ES6, and one of the advantages of using them is that they don't have their own this context, so this remains <br>
+                bound to the original object making the function call. Arrow functions should be used when anonymous functions are required in callbacks</li>
+       </ul>
+
+       <p>Composition Over Inheritance</p>
+       <ul>
+           <li>Composition over inheritance sees objects as building blocks that go together to make other objects rather than classes that are monolithic structures <br>
+            layered on top of each other.</li>
+            <li>If you do decide to use classes, it’s recommended to make them 'skinny' ― meaning they don't have too many properties and methods</li>
+            <li>It's good practice when creating classes is to keep inheritance chains short. A good rule of thumb is to only inherit once, keeping the inheritance <br>
+                chain to just two objects makes unpicking any issues far easier.</li>
+       </ul>
     </section>
 </body>
 
 
-</html>
+</html> 
