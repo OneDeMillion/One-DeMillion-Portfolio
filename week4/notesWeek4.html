@@ -32,7 +32,53 @@
             <li>once: true// listens for click and then unbinds</li>
             
        </ul>
+       <p>OOP</p>
+       <ul>
+           <li>Static - similar to class methods in other programming languages.</li>
+           <li>class Dice {<br>
+            constructor(sides=6) {<br>
+                this.sides = sides;<br>
+            }<br>
+            roll() {<br>
+                return Math.floor(this.sides * Math.random() + 1)<br>
+            }<br>
+            static description() {<br>
+                return 'A way of choosing random numbers'<br>
+            }<br>
+        }</li>
+        <li>Static methods aren't available to instances of the class.</li>
+       </ul>
+
+       <p>Prototypal Inheritance</p>
+       <ul>
+           <li>Javascript uses a Prototypal Inheritance modal. Meaning that every class has a prototype property that is shared by every instance of the class. </li>
+       </ul>
+
+       <p>The Prototype Property</p>
+       <ul>
+           <li>Using the prototype property of the class you can add properties and methods to the class.<br>
+            To add a property:<br>
+            Turtle.prototype.weapon = 'Hands';<br>
+            To add a method:<br>
+            Turtle.prototype.attack = function(){
+                return `Feel the power of my ${this.weapon}!`; </li>
+            <li>If there is a reference to this.weapon in the prototype attack() method, when the attack() method is called, is uses the instance's weapon<br>
+            property because 'this' in the prototype always refers to the instance that actually calls the method.</li>
+       </ul>
        
+       <p>Finding Out The Prototype</p>
+       <ul>
+            <li>Ways to find the prototype of an object:</li>
+            <li>constructor functions prototype property:<br>
+            raph.constructor.prototype;<br>
+            Returns: Turtle { attack: [Function], weapon: 'Hands' }</li>
+            <li>Object.getPrototypeOf() method using object as the parameter: (preferred method)<br>
+                Object.getPrototypeOf(raph);<br>
+                Returns: Turtle { attack: [Function], weapon: 'Hands' }</li>
+            <li>non-standard __proto__ property (known as 'double dunder'):<br>
+                raph.__proto__
+                Returns: Turtle { attack: [Function], weapon: 'Hands' }</li>
+       </ul>
 
     </section>
 </body>
