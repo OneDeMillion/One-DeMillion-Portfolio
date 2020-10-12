@@ -80,6 +80,27 @@
                 Returns: Turtle { attack: [Function], weapon: 'Hands' }</li>
        </ul>
 
+       <p>Public and Private Methods</p>
+       <ul>
+           <li>Methods and Properties in classes are by default public</li>
+           <li>If a property is created as a variable in the class e.g. let _color = color; it becomes private</li>
+           <li>Getter and setter methodsand they form a closure over this variable and provide controlled access to the property instead<br>
+                e.g. this.getColor = () => _color;</li>
+            <li>Private properties can only be changed in a controlled way, for e.g. through the use of if/else statements</li>
+       </ul>
+
+       <p>Object Constructor</p>
+       <ul>
+           <li>All objects ultimately inherit from the prototype of the Object() constructor function</li>
+           <li>The prototype of the Object constructor function has a large number of methods that are inherited by all objects.<br>
+            The reason why the prototype appears as an empty object literal is because all of its methods are not enumerable. </li>
+            <li>Methods that are not enumerable means they will not show up when a for-in loop is used to loop through an object’s properties and methods.</li>
+            <li>Good practice is for all built-in methods to be non-enumerable, and any user-defined methods to be made enumerable. This is so all the built-in <br>
+                methods don’t keep showing up when looking at an object’s methods, but user-defined methods are easy to find</li>
+            <li>A class can inherit from another class using the extends keyword in a class declaration</li>
+            <li>Inside the child class declaration, the keyword super refers to the parent class, and can be used to access any properties and call <br>
+                any methods of the parent class</li>
+       </ul>
     </section>
 </body>
 
