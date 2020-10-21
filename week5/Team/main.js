@@ -8,3 +8,4 @@ try {
 } catch (err) {
 	alert(err.message + " >>main.js");
 }
+
