@@ -1,0 +1,148 @@
+/* Variables */
+:root {
+    --font-color: #1D3557;
+    --font-darkbg-color: #f1FAEE;
+    --heading-color: #1D3557;
+    --body-bg-color: #457B9D;
+    --container-bg-color: #F1FAEE;
+
+    --todo-bg-color: #A8DADC;
+    --add-bg-color: #457B9D;
+
+    --done-bg-color: #457B9D;
+
+    --svg-normal-color: #F1FAEE;
+    --svg-hover-color: #1D3557;
+    --svg-complete-color: #E63946;
+    --svg-remove-color: #E63946;
+    --svg-remove-hover-color: #e26973;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: var(--font-color);
+}
+
+body {
+    background-color: var(--body-bg-color);
+    text-align: center;
+}
+
+.smallContainer {
+    min-height: 30vh;
+    min-width: 15vw;
+    height: auto;
+    margin-top: 4rem;
+    display: inline-block;
+    background-color: var(--container-bg-color);
+     border: 2px solid #e63946;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 40%; 
+
+}
+
+.footerContainer {
+    background-color: var(--container-bg-color);
+    border: 2px solid #e63946;
+    border-radius: 15px;
+    padding: 2rem;
+    min-width: 30vw;
+    width: 40%;
+    height: auto;
+    margin: 4rem 0 2rem 0;
+    display: inline-block;
+}
+
+
+
+#item {
+    width: 75%;
+    border: none;
+    min-height: 2rem;
+    font-size: 1.25rem;
+}
+
+.footerContainer input,
+button {
+    border-radius: 8px;
+    padding: .25rem;
+    font-size: 1.5rem;
+    border: none;
+    margin: 0.2rem;
+}
+
+h1 {
+    padding: 1rem;
+}
+
+h2 {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    display: block;
+    color: var(--heading-color);
+}
+
+li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--todo-bg-color);
+    padding: 2%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+li .buttons {
+    min-width: 100px;
+    margin-left: auto;
+    display: inline;
+}
+
+li .buttons button {
+    background: none;
+    min-width: 40px;
+    border: none;
+    font-size: 1.25rem;
+}
+
+/* Completed task style */
+.completed li {
+    background-color: var(--done-bg-color);
+    color: var(--font-darkbg-color)
+}
+
+.completed .complete svg path {
+    fill: var(--svg-complete-color);
+}
+
+button#add {
+    background-color: var(--add-bg-color);
+    min-width: 40px;
+    border: none;
+    font-size: 2rem;
+    vertical-align: bottom;
+}
+/* defining svg styling */
+svg {
+    max-width: 25px;
+}
+
+svg path {
+    fill: var(--svg-normal-color);
+}
+
+button:hover svg path {
+    fill: var(--svg-hover-color);
+}
+
+.remove svg path {
+    fill: var(--svg-remove-color);
+}
+
+.remove:hover svg path {
+    fill: var(--svg-remove-hover-color);
+}
