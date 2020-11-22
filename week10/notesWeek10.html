@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Notes for Week 10 of WDD330</title>
+    <meta name="description" content="Notes for Week 10 of OneDeMillion's Portfolio for WDD 330" />
+
+    <link rel="stylesheet" href="../css/large.css">
+
+</head>
+
+<body>
+
+    <h1>Kim DeMille's Portfolio</h1>
+
+    <h2>Week Ten Notes</h2>
+    <section id="exerciseEg">
+        <h3>Notes on Reading</h3>
+    </section>
+
+    <section id="writtenNotesBox">
+        <p>Color Pickers</p>
+        <ul>
+            <li>If you want to show a color picker in your code, use:<br>
+            type="color" in input fields that should contain color</li>
+            
+       </ul>
+       <pre>
+           <code>
+               <input id="borders" type="color" name="borders" value="#0059ff">
+           </code>
+       </pre>
+       
+       <p>Element Method Query Selector All</p>
+      <ul>
+          <li>Returns a static Node List</li>
+          <li>Looks like an Array but it isn't</li>
+          <li>Nodelists only support a few methods, such as:<br>
+        item(), entries(), keys(), values(), forEach</li>
+        <li>If you want to filter your nodelist, your're in trouble, unless you convert it to an array.</li>
+        <li>Easy way to do this is with Array.from()</li>
+      </ul>
+      <pre>
+          <code>const AllTheDogsArray = Array.from(AllTheDogs);</code>
+      </pre>
+    </section>
+</body>
+
+
+</html> 

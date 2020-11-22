@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Form validation: Task 1</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      input:invalid {
+          border: 2px dashed red;
+          background-color: yellow;
+      }
+
+      input:focus {
+          border: 1px solid black;
+          background-color: greenyellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <h2>Enter your support query</h2>
+      <ul>
+        <li>
+          <label for="uname">User name:<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+          <input type="text" name="uname" id="uname" minlength="5" maxlength="20" pattern="[a-z][.][a-z0-9]{3}">
+        </li>
+        <li>
+          <label for="email">Email address:<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+          <input type="email" name="email" id="email" placeholder="name@bigcorp.edu" pattern="\w[A-Za-z0-9]+@bigcorp.edu">
+        </li>
+        <li>
+          <label for="phone">Phone number:<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+          <input type="tel" name="phone" id="phone" maxlength="15" pattern="[0-9] {3}-[0-9] {3}-[0-9] {4}" placeholder="123-111-1111">
+        </li>
+        <li>
+          <label for="comment">Comment:</label>
+          <textarea name="comment" id="comment" maxlength="200">
+          </textarea>
+        </li>
+        <li>
+          <button>Submit comment</button>
+        </li>
+      </ul>
+    </form>
+
+
+   
+  </body>
