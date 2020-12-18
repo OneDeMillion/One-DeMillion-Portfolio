@@ -1,0 +1,19 @@
+.button {
+    width: 15%;
+    min-width: 48px;
+    min-height: 48px; //this is the min width and height you want for finger to fit on
+    color: $button-textcolor;
+    border: 2px solid $textbox-bordercolor;
+    border-radius: 10px;
+    outline: none; //usually don't remove the outline unless have plan for focus
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    filter: brightness(120%); //gets brighter as hovers over
+    box-shadow: 4px 2px 5px #000;
+}

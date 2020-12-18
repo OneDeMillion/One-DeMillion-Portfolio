@@ -1,0 +1,54 @@
+
+header.homeHead{
+    color: $title-font-color;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -5px;
+}
+.homeHero {
+    opacity: .5;
+}
+
+.homeHead {
+    position: absolute;
+    top: 15vh;
+    width: 100%;
+    text-align: center;
+}
+
+.homeInfo {
+    position: relative;
+}
+
+.homeInfoText {
+    padding: 4%;
+    max-height: 22vh;
+    line-height: 1.5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.homeGoal {
+    min-height: 10vh;
+    max-height: 16vh;
+    @include flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: $alt-section-bgcolor;
+    padding: 5%;
+    margin: 0;
+}
+
+.homeGoal h3 {
+    color: $highlight-font-color;
+}
+
+.homeButtons {
+    padding: 3%;
+}
+
+.homeButtons button.button{
+    margin: 1rem auto;
+    font-size: 1rem;
+    box-shadow: 4px 5px 4px #707070;
+}

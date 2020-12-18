@@ -1,0 +1,17 @@
+.dropHead {
+    color: $title-font-color;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -5px;
+    display: block;
+}
+// .dropHero {
+//     opacity: .5;
+//     // position: relative;
+// }
+
+.dropHead {
+    position: absolute;
+    text-align: center;
+    color: red;
+}

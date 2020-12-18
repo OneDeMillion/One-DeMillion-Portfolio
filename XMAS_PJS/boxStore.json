@@ -1,0 +1,229 @@
+{
+    "stores": [
+      {
+        "id" : 1,
+        "storeInfo" : {
+          "name" : "The Local",
+          "phone" : 7152980896,
+          "web" : "https://thelocalwi.com",
+          "storeType" : "Home apparel, gifts & more made by local Artisans",
+          "special" : "10% off your purchase of $30 or more with pajama donation",
+          "imgUrl" : "https://www.yelp.com/biz_photos/the-local-wausau?select=3dU9F1zbtmS_TfIsHPG81w",
+            "open" : {
+              "time" : "10AM - 5PM",
+              "days" : "Wednesday to Saturday"
+          },
+        "loc" : {
+            "addrs" : "420 N 3rd St",
+            "cty" : "Wausau",
+            "state" : "WI"
+        }
+          
+      }
+       
+        
+      },
+      {
+        "id" : 2,
+        "storeInfo" : {
+          "name" : "The Local - Weston",
+          "phone" : 7152980896,
+          "web" : "https://thelocalwi.com",
+          "storeType" : "Home apparel, gifts & more made by local Artisans",
+          "special" : "10% off your purchase of $30 or more with pajama donation",
+          "imgUrl" : "https://live.staticflickr.com/65535/48698939978_cf1faffdf7_z.jpg",
+            "open" : {
+              "time" : "10AM - 5PM",
+              "days" : "Wednesday to Saturday"
+        },
+          "loc" : {
+            "addrs" : "3806 Schofield Ave, Suite 2",
+            "cty" : "Weston",
+            "state" : "WI"
+        }
+      }
+      },
+      {
+        "id"  : 3,
+        "storeInfo" : {
+          "name" : "Arrow Sports Club",
+          "phone" : 7153592363,
+          "web" : "",
+          "storeType" : "Bar and Grill",
+          "special" : "Bring a pair of pajamas and get half off a drink",
+          "imgUrl" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsrz50GVD75dGUQJhf51_1OAVdpJT7uvZxNQ&usqp=CAU",
+            "open" : {
+              "time" : "11AM - 2:30AM",
+              "days" : "Monday to Sunday"
+            },
+            "loc" : {
+              "addrs" : "6202 Schofield Ave",
+              "cty" : "Weston",
+              "state" : "WI"
+            }
+      }
+      },
+      {
+        "id" : 4,
+        "storeInfo" : {
+          "name" : "New Life Ink",
+          "phone" : 7158705200,
+          "web" : "http://www.newlifeinkff.com",
+          "storeType" : "Tattoo store, specialties range from hyper realism tattoos to American traditional",
+          "special" : "For every pair of pj's donated, name entered into raffle to win a gift certificate worth a $500 tattoo",
+          "imgUrl" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkIIMYbagg06GZIp1DDyWoK6Fyocq6kckpHg&usqp=CAU",
+            "open" : {
+              "time" : "8:30AM - 6:00PM",
+              "days" : "Monday to Saturday"
+            },
+            "loc" : {
+              "addrs" : "2807 Rib Mountain Drive",
+              "cty" : "Wausau",
+              "state" : "WI"
+            }
+        }
+      },
+      {
+        "id": 5,
+        "storeInfo" : {
+          "name" : "Sapphire Salon",
+          "phone" : 7158437772,
+          "web" : "https://www.sapphiresalonwausau.com",
+          "storeType" : "Hair Salon - cut, color, style and lashes",
+          "special" : "",
+          "imgUrl" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUmS-sC6hmk4gQ8hQaEs2zOgDQJHM3zaZAmw&usqp=CAU",
+            "open" : {
+              "time" : "9:00AM - 5:00PM, til 8pm Tues-Thurs",
+              "days" : "Monday to Friday, Sat Appts Only"
+            },
+            "loc" : {
+              "addrs" : "516 S 17th Ave",
+              "cty" : "Wausau",
+              "state" : "WI"
+            }
+        }
+      },
+      {
+        "id": 6,
+        "storeInfo" : {
+          "name" : "Sam's Pizza",
+          "phone" : 7158423165,
+          "web" : "https://www.samspizzaofwausau.com",
+          "storeType" : "Long-standing pizza parlor featuring traditional pies & draft brews in an old-fashioned dining room",
+          "special" : "",
+          "imgUrl" : "https://www.samspizzaofwausau.com/static/images/gallery/everest_room_t.jpg",
+            "open" : {
+              "time" : "3PM - 10PM",
+              "days" : "Monday to Sunday"
+            },
+            "loc" : {
+            "addrs" : "111 Elm St #4669",
+            "cty" : "Wausau",
+            "state" : "WI"
+            }
+        }
+      },
+      {
+        "id": 7,
+        "storeInfo" : {
+          "name" : "Wausau Police Station",
+          "phone" : 7152617800,
+          "web" : "https://ci.wausau.wi.us/Departments/Police.aspx",
+          "storeType" : "The Wausau Police Department strives for excellence in policing by partnering with the community to enhance the quality of life",
+          "special" : "",
+          "imgUrl" : "https://www.ci.wausau.wi.us/portals/0/Departments/Police/Images/Police%20Department%20Building.jpg",
+            "open" : {
+              "time" : "",
+              "days" : ""
+            },
+            "loc" : {
+            "addrs" : "515 Grand Avenue",
+            "cty" : "Wausau",
+            "state" : "WI"
+            }
+        }
+
+      },
+      {
+        "id": 8,
+        "storeInfo" : {
+          "name" : "Jim Kryshak Jewelers",
+          "phone" : 7152417557,
+          "website" : "https://www.jimkryshak.com/?gclid=CjwKCAiA_Kz-BRAJEiwAhJNY77dKmCGZ7PKScOH4n8Sx6DdDhuf7IfruJm9UvxV8VZBZRgS5d_yZHRoCT9QQAvD_BwE",
+          "storeType" : "One of the largest jewelry selections in Wisconsin, also provide custom made and provide in-house repairs",
+          "special" : "",
+          "imgUrl" : "https://www.jimkryshak.com/Images/C/aboutus_1.jpg",
+            "open" : {
+              "time" : "10AM - 7PM, Sat til 5PM",
+              "days" : "Monday to Saturday"
+            },
+            "loc" : {
+            "addrs" : "226500 Rib Mountain Drive",
+            "cty" : "Wausau",
+            "state" : "WI"
+            }
+        }
+      },
+      {
+        "id": 9,
+        "storeInfo": {
+          "name" : "Innovative Chiropractic",
+          "phone" : 7153554224,
+          "web" : "https://www.innovativehealthclinic.com",
+          "storeType" : "Chiropractic, Laser Therapy, and Functional Medicine",
+          "special" : "",
+          "imgUrl" : "https://www.innovativehealthclinic.com/wp-content/uploads/2020/10/Chiropractic-services-for-neck-pain-in-Weston-Wausau-WI-at-Innovative-Health.jpg",
+            "open" : {
+              "time" : "6:30AM - 5:30PM",
+              "days" : "Monday to Friday"
+            },
+            "loc" : {
+            "addrs" : "2114 Schofield Ave",
+            "cty" : "Schofield",
+            "state" : "WI"
+            }
+        }
+      },
+      {
+        "id": 10,
+        "storeInfo" : {
+          "name" : "The Palms Supper Club",
+          "phone" : 7153592200,
+          "web" : "https://www.thepalmswausau.com",
+          "storeType" : "Supper Club and Steak House",
+          "special" : "",
+          "imgUrl" : "http://thepalmswausau.com/wp-content/uploads/2018/07/19298-MMS-1529507793119-attachment1-2018062095101246-copy.jpg",
+            "open": {
+              "time" : "3PM - 10PM",
+              "days" : "Tuesday to Saturday"
+            },
+            "loc" : {
+            "addrs" : "5912 US-51 BUS",
+            "cty" : "Weston",
+            "state" : "WI"
+            }
+        }
+      },
+      {
+        "id": 11,
+        "storeInfo": {
+          "name" : "Wickersham Jewelry",
+          "phone" : 7153555987,
+          "web" : "https://www.wickershamjewelry.com/",
+          "storeType" : "Known for their variety of jewelry inventory, customized diamond jewelry, and repair",
+          "special" : "",
+          "imgUrl" : "https://www.wickershamjewelry.com/media/uploads/DSO_2528.jpg",
+            "open" : {
+              "time" : "10AM - 6PM",
+              "days" : "Sunday to Saturday"
+            },
+            "loc" : {
+            "addrs" : "10209 Market St",
+            "cty" : "Rothschild",
+            "state" : "WI"
+            }
+        }
+      }
+    ]
+  }
+  
